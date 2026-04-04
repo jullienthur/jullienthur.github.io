@@ -8,3 +8,5 @@
    <p class="text-gray-600 max-w-md leading-relaxed">
       I'm currently working on updating this page. Please check back a little later to see the finished result!
    </p>
+
+   I'm currently working on updating this page. Please check back a little later to see the finished result!
