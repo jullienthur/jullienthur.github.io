@@ -1,3 +1,4 @@
+<div class="publication-card">
 <title>Under Construction</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -8,3 +9,4 @@
    <p class="text-gray-600 max-w-md leading-relaxed">
       I'm currently working on updating this page. Please check back a little later to see the finished result!
    </p>
+</div>
