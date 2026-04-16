@@ -25,6 +25,6 @@
 
 
 
-I'm a 1st year **Mechanical Engineering Student at the University of Utah**, emphasizing in Robotics & Controls, minoring in Computer Science.
+&nbsp; I'm a 1st year **Mechanical Engineering Student at the University of Utah**, emphasizing in Robotics & Controls, minoring in Computer Science.
 
-I'm currently working on a **submersible centrifugal pump** - [lorem ipsum dolor emet]
+&nbsp; 
