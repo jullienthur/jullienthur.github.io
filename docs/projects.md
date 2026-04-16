@@ -1,5 +1,5 @@
 # Projects
-
+---
 ## Single-Axis Linear Actuator & Control System
 **Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | Links: **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
 
@@ -19,25 +19,29 @@ The system relies on a seamless bi-directional serial communication loop between
 
 - **Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
 
-**Key Optimizations**
+
+### Key Optimizations
 
 - **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
 
 - **Concurrent Execution:** Wrote custoom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
 
-**Reflection & Future Scope**
+
+### Reflection & Future Scope
 
 While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannnon halts at the optimal point on the rail before firing.
 
 If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot <em>while</em> in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
 
+---
 
 ## Submersible Water Pump
 
 
 I'm currently working on updating this project. Please check back a little later to see the finished result!
 
+---
 
 ## My Portfolio Site!
 
-So far, all you've seen has been part of this project! Check back for a small run-down of how I built it!
+So far, all you've seen has been part of this project! Check back for a small run-down of how I built it and plan to maintain!
