@@ -16,28 +16,21 @@ Through rigorous software optimization and hardware coordination, our team reduc
 
 The system relies on a seamless bi-directional serial communication loop between high-level processing and low-level hardware control:
 
-<ul>
-  <li><strong>Vision & Processing:</strong> MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.</li>
-  <li><strong>Hardware Execution:</strong> This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.</li>
-</ul>
+* **Vision & Processing:** MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.
+* **Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
 
-<h3>Key Optimizations</h3>
+### Key Optimizations
 
-<p>The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. During these weeks, we focused on two things:</p>
+The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. During these weeks, we focused on two things:
 
-<ul>
-  <li><strong>Pathfinding Algorithm:</strong> Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.</li>
-  <li><strong>Concurrent Execution:</strong> Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.</li>
-</ul>
-
+* **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
+* **Concurrent Execution:** Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
 
 ### Reflection & Future Scope
 
+While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannon halts at the optimal point on the rail before firing.
 
-While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannnon halts at the optimal point on the rail before firing.
-
-If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot <em>while</em> in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
-
+If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot *while* in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
 
 ## Submersible Water Pump
 
