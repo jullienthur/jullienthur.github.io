@@ -11,7 +11,11 @@ Developed a high-speed control system integrating MATLAB and C++ to operate an a
 
 Through rigorous software optimization and hardware coordination, our team reduced the total execution time from a baseline goal of 100 seconds down to just 45 seconds—**a 55% improvement**.
 
+<!-- -->
+
 ### System Architecture & Data Pipeline
+
+<!-- -->
 
 The system relies on a seamless bi-directional serial communication loop between high-level processing and low-level hardware control:
 
@@ -23,6 +27,8 @@ The system relies on a seamless bi-directional serial communication loop between
 
 ### Key Optimizations
 
+<!-- -->
+
 The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. It was finally time to make it run the best it could through 2 strategic choices:
 
 - **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
@@ -33,18 +39,20 @@ The final weeks of the project were focused solely upon optimization; the proces
 
 ### Reflection & Future Scope
 
+<!-- -->
+
 While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannnon halts at the optimal point on the rail before firing.
 
 If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot <em>while</em> in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
 
----
+
 
 ## Submersible Water Pump
 
 
 I'm currently working on updating this project. Please check back a little later to see the finished result!
 
----
+
 
 ## My Portfolio Site!
 
