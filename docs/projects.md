@@ -16,15 +16,17 @@ Through rigorous software optimization and hardware coordination, our team reduc
 
 The system relies on a seamless bi-directional serial communication loop between high-level processing and low-level hardware control:
 
-* **Vision & Processing:** MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.
-* **Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
+**Vision & Processing:** MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.
+**Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
+
 
 ### Key Optimizations
 
 The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. During these weeks, we focused on two things:
 
-* **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
-* **Concurrent Execution:** Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
+
+**Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
+**Concurrent Execution:** Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
 
 ### Reflection & Future Scope
 
