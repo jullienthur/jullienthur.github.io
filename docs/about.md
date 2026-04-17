@@ -25,6 +25,11 @@
 
 
 
-&nbsp; I'm a 1st year **Mechanical Engineering Student at the University of Utah**, emphasizing in Robotics & Controls, minoring in Computer Science.
+&nbsp; 
+I'm a first-year **Mechanical Engineering student at the University of Utah**, minoring in Computer Science with an emphasis on Robotics & Controls.
+
+Ultimately, I want to explore the intersection of electrical and mechanical systems to design advanced medical robotics and surgical devices. Right now, I’m clearing through the baseline requirements—linear algebra, ODEs, and electromagnetism—to build the foundation I need to create technology that genuinely helps people.
+
+In my free time, I enjoy reading the classics; I recently finished Dracula (a bit overrated, if you ask me!) and my next goal is to tackle Dostoevsky’s works, starting with The Idiot. I’m also big into weightlifting, having just hit 8 plates on the leg press. My current goals are a 145lb bench, 225lb deadlift, and 285lb squat. Outside of the gym and the library, you can usually find me out with friends and family, tending to my plants, or making a delicious meal.
 
 &nbsp; 
