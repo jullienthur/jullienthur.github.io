@@ -1,5 +1,7 @@
 # Projects
+
 ---
+
 ## Single-Axis Linear Actuator & Control System
 **Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | Links: **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
 
@@ -36,12 +38,17 @@ While efficient, the current iteration relies on a "stop-and-shoot" mechanism, w
 
 If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot *while* in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
 
+---
+
 ## Submersible Water Pump
 
 
 I'm currently working on updating this project. Please check back a little later to see the finished result!
 
+---
 
 ## My Portfolio Site!
 
 So far, all you've seen has been part of this project! Check back for a small run-down of how I built it and plan to maintain!
+
+---
