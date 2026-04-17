@@ -22,14 +22,14 @@ The system relies on a seamless bi-directional serial communication loop between
 - **Vision & Processing:** MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.
 
 - **Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
-
-<!-- -->
+&nbsp;
 
 ### Key Optimizations
 
 <!-- -->
 
-The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. It was finally time to make it run the best it could through 2 strategic choices:
+The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. During these weeks, we focused on two things:
+
 
 - **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
 
