@@ -23,6 +23,8 @@ The system relies on a seamless bi-directional serial communication loop between
 
 ### Key Optimizations
 
+The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. It was finally time to make it run the best it could through 2 strategic choices:
+
 - **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
 
 - **Concurrent Execution:** Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
