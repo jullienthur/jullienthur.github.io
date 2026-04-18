@@ -1511,3 +1511,27 @@ model-viewer {
         height: 300px; /* Make it slightly more compact on mobile */
     }
 }
+/* Responsive images within prose */
+.prose img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Reset default figure margins */
+.prose figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/* Styling for semantic captions */
+.prose figcaption {
+    font-size: 0.875rem;
+    color: var(--color-global-text);
+    opacity: 0.8;
+    margin-top: 0.75rem;
+    font-style: italic;
+}
