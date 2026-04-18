@@ -63,7 +63,8 @@ If I were to develop a second version, I would implement a dynamic firing system
 
 ### Project Overview
 
-Designed and fabricated a custom semi-submersible water pump tailored for low-flow applications. Conceived as a practical design exercise in Geometric Dimensioning and Tolerancing (GD&T), the primary objective was to ensure complete electronic isolation from the fluid while maximizing output.
+Designed and fabricated a custom semi-submersible water pump tailored for low-flow applications. Conceived as a practical design exercise in Geometric Dimensioning and Tolerancing (GD&T), the primary objective was to ensure complete electronic isolation from the fluid while maximizing output.'
+
 Through multiple physical iterations, our team successfully increased the flow rate from a baseline objective of 1 GPM up to **2.5 GPM**.
 
 ### Design & Engineering
@@ -75,15 +76,15 @@ Through multiple physical iterations, our team successfully increased the flow r
 + **Volute & Housing:** The volute follows a standard spiral profile, feeding into an outlet pipe capable of pulling water up a 1-meter head. The bottom piece extends around the impeller to accommodate potential shifting during sub-optimal working conditions.
 
 <figure>
-    <img src="/assets/images/impeller-resource.jpg"
+    <img src="assets/images/impeller-resource.jpg"
          alt="Types of Impeller">
 </figure>
 Figure 1: Different Impeller Designs reference
-<div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+<div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
 Figure 2: Our Final Impeller Design
-<div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+<div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
 Figure 3: Top Casing Design
-<div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+<div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
 Figure 4: Bottom Casing Design
 
 
