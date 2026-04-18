@@ -76,7 +76,7 @@ Through multiple physical iterations, our team successfully increased the flow r
 + **Volute & Housing:** The volute follows a standard spiral profile, feeding into an outlet pipe capable of pulling water up a 1-meter head. The bottom piece extends around the impeller to accommodate potential shifting during sub-optimal working conditions.
 
 <figure>
-    <img src="assets/images/impeller-resource.jpg"
+    <img src="assets/impeller-resource.jpg"
          alt="Types of Impeller">
 </figure>
 Figure 1: Different Impeller Designs reference
