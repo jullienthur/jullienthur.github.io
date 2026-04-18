@@ -3,7 +3,7 @@
 <hr>
 
 ## Single-Axis Linear Actuator & Control System
-**Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | Links: **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
+**Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | **Links:** **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
 
 **Core Technologies:** MATLAB Image Processing, C++, Inverse Kinematics, Serial Communication, State Machines
 
@@ -70,7 +70,7 @@ I'm currently working on updating this project. Please check back a little later
 <hr>
 
 ## My Portfolio Site!
-**Timeline:** Mar 2026 - Present | Links: **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
+**Timeline:** Mar 2026 - Present | **Links:** **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
 
 **Core Technologies:** HTML/CSS, JavaScript, Git/GitHub
 
