@@ -79,13 +79,19 @@ Through multiple physical iterations, our team successfully increased the flow r
     <img src="assets/impeller-resource.jpg" alt="Types of Impeller">
     <figcaption>Figure 1: Different Impeller Designs reference</figcaption>
 </figure>
-Figure 1: Different Impeller Designs reference
-<div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
-Figure 2: Our Final Impeller Design
-<div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
-Figure 3: Top Casing Design
-<div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
-Figure 4: Bottom Casing Design
+<figure>
+    <div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <figcaption>Figure 2: Our Final Impeller Design</figcaption>
+</figure>
+<figure>
+    <div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <figcaption>Figure 3: Top Casing Design</figcaption>
+</figure>
+<figure>
+    <div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" loading="eager" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <figcaption>Figure 4: Bottom Casing Design</figcaption>
+</figure>    
+
 
 
 ### Challenges & Optimization
