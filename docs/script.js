@@ -403,7 +403,7 @@ class AccordionAnimator {
         // Apply current height to start the animation
         details.style.height = `${details.offsetHeight}px`;
         details.open = true;
-
+        window.dispatchEvent(new Event('resize'));
         // Wait a frame so the browser renders the open state to calculate true height
         window.requestAnimationFrame(() => {
             const startHeight = details.offsetHeight;
