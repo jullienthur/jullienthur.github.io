@@ -5,11 +5,11 @@
 ## Single-Axis Linear Actuator & Control System
 **Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | Links: **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
 
-**Core Technologies:** MATLAB Image Processing, Arduino C, Inverse Kinematics, Serial Communication, State Machines
+**Core Technologies:** MATLAB Image Processing, C++, Inverse Kinematics, Serial Communication, State Machines
 
 <details class="project-accordion">
 
-<summary> View Project Details & Architecture </summary>
+<summary> View Project Details </summary>
 
 <div class="accordion-content">
 
@@ -51,14 +51,39 @@ If I were to develop a second version, I would implement a dynamic firing system
 <hr>
 
 ## Submersible Water Pump
+**Timeline:** Jan 2026 - Apr 2026 | **Team Size:** 3 Members
 
+**Core Technologies:** SolidWorks, Bambu Studio, GD&T
+
+<details class="project-accordion">
+
+<summary> View Project Details </summary>
+
+<div class="accordion-content">
 
 I'm currently working on updating this project. Please check back a little later to see the finished result!
+
+</div>
+
+</details>
 
 <hr>
 
 ## My Portfolio Site!
+**Timeline:** Mar 2026 - Present | Links: **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
+
+**Core Technologies:** HTML/CSS, JavaScript, Git/GitHub
+
+<details class="project-accordion">
+
+<summary> View Project Details </summary>
+
+<div class="accordion-content">
 
 So far, all you've seen has been part of this project! Check back for a small run-down of how I built it and plan to maintain!
+
+</div>
+
+</details>
 
 <hr>
