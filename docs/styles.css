@@ -1473,3 +1473,41 @@ html {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-4px) rotate(-5deg); }
 }
+/* CAD Model Viewer Component    */
+.cad-viewer-container {
+    width: 100%;
+    height: 400px;
+    margin: 2rem 0;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: color-mix(in srgb, var(--color-card-bg) 50%, transparent);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--color-shadow) 50%, transparent);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: grab;
+}
+
+.cad-viewer-container:active {
+    cursor: grabbing;
+}
+
+.cad-viewer-container:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    /* Keep the background completely transparent so it inherits the site theme */
+    --poster-color: transparent; 
+    /* Style the loading bar to match your site accent */
+    --progress-bar-color: var(--color-accent);
+    --progress-bar-height: 4px;
+}
+
+@media (max-width: 640px) {
+    .cad-viewer-container {
+        height: 300px; /* Make it slightly more compact on mobile */
+    }
+}
