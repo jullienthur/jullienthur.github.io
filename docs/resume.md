@@ -28,7 +28,7 @@
 
 <div class="resume-download-container">
   <a href="assets/resume.pdf" download="Jullien_Thur_Resume.pdf" class="btn-cutesy">
-    <span class="cutesy-icon"><p> Download Resume </p></span> 
+    <p> Download Resume </p>
   </a>
 </div>
 
