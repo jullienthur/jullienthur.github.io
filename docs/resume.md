@@ -26,18 +26,11 @@
 
 </div>
 
-<div class="resume-viewer-container">
-
-<div class="resume-pdf-wrapper">
-<iframe src="assets/resume.pdf" title="Jullien Thur Resume">
-<p>It appears your browser doesn't support embedded PDFs. <a href="assets/resume.pdf">Click here to download it directly.</a></p>
-</iframe>
+<div class="resume-download-container">
+  <a href="assets/resume.pdf" download="Jullien_Thur_Resume.pdf" class="btn-cutesy">
+    <span class="cutesy-icon">📝</span> Grab the PDF! ✨
+  </a>
 </div>
-
-<a href="assets/resume.pdf" download="Jullien_Thur_Resume.pdf" class="btn-download">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-Download Full Résumé
-</a>
 
 </div>
 

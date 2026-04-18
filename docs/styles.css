@@ -1425,3 +1425,51 @@ html {
         transform: translateY(0);
     }
 }
+/* Cutesy Resume Download Button */
+.resume-download-container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cutesy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background-color: color-mix(in srgb, var(--color-global-bg) 80%, transparent);
+    color: var(--color-accent-2);
+    border: 2px dashed var(--color-accent); /* Dashed border for a crafty vibe */
+    border-radius: 9999px; /* Soft pill shape */
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none !important;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy, springy transition */
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--color-shadow) 50%, transparent);
+}
+
+.btn-cutesy:hover {
+    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+    transform: translateY(-6px) scale(1.03); /* Pops up and gets slightly larger */
+    border-style: solid; /* Solidifies on hover */
+    color: var(--color-accent);
+    box-shadow: 0 10px 25px color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.btn-cutesy:active {
+    transform: translateY(2px) scale(0.97); /* Squishes down when clicked */
+    transition: all 0.1s;
+}
+
+/* Floating animation for the little icon */
+.cutesy-icon {
+    font-size: 1.4rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-4px) rotate(-5deg); }
+}
