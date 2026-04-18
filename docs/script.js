@@ -368,7 +368,85 @@ class MarkdownLoader {
         return html;
     }
 }
+// Smooth Accordion Animation
+class AccordionAnimator {
+    constructor() {
+        this.init();
+    }
 
+    init() {
+        // Use event delegation to handle dynamically loaded markdown content
+        document.addEventListener('click', (e) => {
+            const summary = e.target.closest('.project-accordion > summary');
+            if (!summary) return;
+
+            const details = summary.parentElement;
+            
+            // Prevent spam-clicking from glitching the animation
+            if (details.dataset.isAnimating === 'true') {
+                e.preventDefault();
+                return;
+            }
+
+            e.preventDefault();
+            details.dataset.isAnimating = 'true';
+
+            if (details.open) {
+                this.close(details, summary);
+            } else {
+                this.open(details, summary);
+            }
+        });
+    }
+
+    open(details, summary) {
+        // Apply current height to start the animation
+        details.style.height = `${details.offsetHeight}px`;
+        details.open = true;
+
+        // Wait a frame so the browser renders the open state to calculate true height
+        window.requestAnimationFrame(() => {
+            const startHeight = details.offsetHeight;
+            const content = details.querySelector('.accordion-content');
+            const endHeight = summary.offsetHeight + (content ? content.offsetHeight : 0);
+
+            this.animate(details, startHeight, endHeight, () => {
+                details.style.height = ''; // Reset to auto so it can adapt to screen resizing
+                details.dataset.isAnimating = 'false';
+            });
+        });
+    }
+
+    close(details, summary) {
+        const startHeight = details.offsetHeight;
+        const endHeight = summary.offsetHeight;
+
+        this.animate(details, startHeight, endHeight, () => {
+            details.open = false;
+            details.style.height = ''; 
+            details.dataset.isAnimating = 'false';
+        });
+    }
+
+    animate(details, startHeight, endHeight, callback) {
+        // Web Animations API for smooth 60fps rendering
+        const animation = details.animate({
+            height: [`${startHeight}px`, `${endHeight}px`]
+        }, {
+            duration: 300,
+            easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+        });
+
+        animation.onfinish = () => {
+            details.style.height = `${endHeight}px`; 
+            callback();
+        };
+        
+        animation.oncancel = () => {
+            details.dataset.isAnimating = 'false';
+        };
+    }
+}
 // Hover effect for letter 'b' and 'B'
 (function() {
     function applyBHoverEffect(root) {
@@ -488,6 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     new LazyImageLoader();
     new MarkdownLoader();
+    new AccordionAnimator();
     
     // Apply hover effect to all 'b' letters on initial content
     if (typeof window.applyBHoverEffect === 'function') {

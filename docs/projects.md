@@ -7,6 +7,12 @@
 
 **Core Technologies:** MATLAB Image Processing, Arduino C, Inverse Kinematics, Serial Communication, State Machines
 
+<details class="project-accordion">
+
+<summary> View Project Details & Architecture </summary>
+
+<div class="accordion-content">
+
 ### Project Overview
 
 Developed a high-speed control system integrating MATLAB and C++ to operate an automated, solenoid-actuated cannon mounted on a single-axis linear rail. The system was designed to autonomously track, target, fire at six pre-specified locations, and reload between each shot.
@@ -37,6 +43,10 @@ The final weeks of the project were focused solely upon optimization; the proces
 While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannon halts at the optimal point on the rail before firing.
 
 If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot *while* in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
+
+</div>
+
+</details>
 
 <hr>
 
