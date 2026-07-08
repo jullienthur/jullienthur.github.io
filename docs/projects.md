@@ -5,7 +5,7 @@
 ## Single-Axis Linear Actuator & Trajectory Control System
 **Timeline:** Aug 2025 - Dec 2025 | **Team Size:** 3 Members | **Links:** **[GitHub Repository](https://github.com/jullienthur/1ALA-TCS)**
 
-**Core Technologies:** MATLAB Image Processing, C++, Inverse Kinematics, Serial Communication, State Machines
+**Core Technologies:** MATLAB Image Processing, Arduino C, Inverse Kinematics, Serial Communication, State Machines
 
 <details class="project-accordion">
 
@@ -13,37 +13,25 @@
 
 <div class="accordion-content">
 
-### Project Overview
+### The Problem
+The objective was to develop an automated control system to operate a solenoid-actuated cannon mounted on a single-axis linear rail. The system needed to autonomously track, target, fire at six pre-specified locations, and reload between each shot. The primary engineering challenge was to minimize the total operational cycle time against a baseline goal of 100 seconds, requiring seamless coordination between high-level visual data processing and low-level mechanical execution.
 
-Developed a high-speed control system integrating MATLAB and C++ to operate an automated, solenoid-actuated cannon mounted on a single-axis linear rail. The system was designed to autonomously track, target, fire at six pre-specified locations, and reload between each shot.
+### The Solution
+To achieve a high-speed, autonomous cycle, we built a bi-directional serial communication pipeline bridging MATLAB and an Arduino-based kinematics engine:
 
-Through rigorous software optimization and hardware coordination, our team reduced the total execution time from a baseline goal of 100 seconds down to just 45 seconds—**a 55% improvement**.
++ **Vision & Target Acquisition:** Implemented MATLAB image processing utilizing a color-filter array and a simplified environmental map to identify and extract the spatial coordinates of visual targets.
++ **Hardware Execution:** Passed spatial data to the Arduino C++ kinematics engine, which translated the coordinates into precise linear movements and ballistic trajectories. 
++ **Pathfinding Optimization:** Engineered a dynamic sorting algorithm that optimized the engagement sequence based on each target's spatial proximity to the fixed reloading station, drastically reducing unnecessary travel distance along the rail.
++ **Concurrent Operations:** Developed custom, non-blocking state machines in C++ to run the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
 
+### The Results
+Through rigorous software optimization and synchronized hardware control, the system successfully executed the complete targeting, firing, and reloading sequence with high reliability. The combination of concurrent execution and optimized pathfinding reduced the total run time from the 100-second baseline down to just 45 seconds—a **55% improvement** in overall system speed.
 
-### System Architecture & Data Pipeline
+### Future Scope
+While highly efficient, the current iteration relies on a "stop-and-shoot" mechanism, halting the cannon at an optimal point on the rail before firing. A future iteration would implement a dynamic firing system. By utilizing advanced kinematics to calculate vectors on the fly, the system could shoot *while* in motion, leveraging the actuator's lateral momentum to curve the ball's trajectory and further slash cycle times.
 
-The system relies on a seamless bi-directional serial communication loop between high-level processing and low-level hardware control:
-
-+ **Vision & Processing:** MATLAB handles the image processing to identify and extract the spatial coordinates of visual targets. This is done through a simplified map of the cannon's surroundings and a color-filter array to identify targets.
-
-+ **Hardware Execution:** This data is fed to the Arduino-based kinematics engine, which translates the coordinates into linear movements and ballistic trajectories.
-
-
-### Key Optimizations
-
-The final weeks of the project were focused solely upon optimization; the process scaffolding had been finalized. During these weeks, we focused on two things:
-
-
-+ **Pathfinding Algorithm:** Engineered the software to dynamically sort the engagement sequence of targets based on their spatial proximity to the fixed reloading station, minimizing unnecessary travel distance.
-
-+ **Concurrent Execution:** Wrote custom, non-block state machines in C++. This allowed the system to operate the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
-
-### Reflection & Future Scope
-
-While efficient, the current iteration relies on a "stop-and-shoot" mechanism, where the cannon halts at the optimal point on the rail before firing.
-
-If I were to develop a second version, I would implement a dynamic firing system. By utilizing advanced kinematics, the system could calculate the exact firing vector required to shoot *while* in motion. Utilizing the actuator's lateral momentum to curve the ball's trajectory would allow for continuous movement, further slashing the overall cycle time.
-
+</div>
+</details>
 </div>
 
 </details>
@@ -61,19 +49,22 @@ If I were to develop a second version, I would implement a dynamic firing system
 
 <div class="accordion-content">
 
-### Project Overview
+### The Problem
+For low-flow applications, standard water pumps often risk exposing internal electronics to fluid damage or suffer from internal pressure leakage. The objective of this project was to engineer a custom semi-submersible water pump that guaranteed complete electronic isolation from the fluid. Conceived as a practical exercise in Geometric Dimensioning and Tolerancing (GD&T), the system needed to overcome inherent mechanical challenges—such as excessive friction and motor startup wear—while meeting a baseline flow rate of 1 Gallon Per Minute (GPM).
 
-Designed and fabricated a custom semi-submersible water pump tailored for low-flow applications. Conceived as a practical design exercise in Geometric Dimensioning and Tolerancing (GD&T), the primary objective was to ensure complete electronic isolation from the fluid while maximizing output.'
+### The Solution
+To ensure reliable, isolated fluid transfer, we engineered a customized mechanical and hydrodynamic system using SolidWorks and PLA 3D printing:
 
-Through multiple physical iterations, our team successfully increased the flow rate from a baseline objective of 1 GPM up to **2.5 GPM**.
++ **Optimized Hydrodynamics:** Modeled a custom enclosed centrifugal impeller. The backward-curved blades increase endurance in static pressure environments and reduce motor wear upon startup. Additionally, the shrouds compensate for axial movement to mitigate pressure leakage within the housing.
++ **Robust Volute Housing:** Developed a two-part standard spiral volute capable of pulling water up a 1-meter head. The bottom casing was extended around the impeller to accommodate potential shifting during sub-optimal working conditions.
++ **Mechanical Stabilization:** We encountered a critical issue with driveshaft whip, which caused excessive friction between the housing and the impeller. We solved this by designing and integrating two stabilizing brackets between the gearbox and the submerged pump section, ensuring rigid, true rotation.
++ **Power Delivery:** Integrated a 3W motor running through a 1:7.72 gearbox, achieving a stable final average output of 72 RPM under load.
 
-### Design & Engineering
+### The Results
+Through strategic GD&T application and multiple physical iterations, the final prototype successfully achieved complete electronic isolation. By eliminating the driveshaft whip and optimizing the impeller geometry, we increased the flow rate from the initial 1 GPM baseline to **2.5 GPM**—a 150% improvement in fluid output.
 
-+ **Drive Shaft & Gearbox:** The system is powered by a 3W motor running through a 1:7.72 gearbox, achieving a final average output of 72 RPM under load.
-
-+ **Impeller Design:** Modeled custom centrifugal impellers in SolidWorks to optimize head pressure and flow rate. We utilized an enclosed impeller design, where the shrouds compensate for axial movement and mitigate pressure leakage within the two-part housing. The blades are backward-curved to increase endurance in a static pressure environment and reduce motor wear upon startup.
-
-+ **Volute & Housing:** The volute follows a standard spiral profile, feeding into an outlet pipe capable of pulling water up a 1-meter head. The bottom piece extends around the impeller to accommodate potential shifting during sub-optimal working conditions.
+### Future Scope
+While the current design meets all performance criteria, future iterations will focus on the exterior form factor and fluid path refinement. Planned improvements include an ergonomic redesign of the external housing, fine-tuning the internal volute geometry, and implementing a streamlined adapter between the end volute and the outlet pipe.
 
 <figure>
     <img src="assets/impeller-resource.jpg" alt="Types of Impeller">
@@ -92,16 +83,8 @@ Through multiple physical iterations, our team successfully increased the flow r
     <figcaption>Figure 4: Bottom Casing Design</figcaption>
 </figure>    
 
-
-
-### Challenges & Optimization
-
-The most significant issue we experienced was driveshaft whip, which caused excessive friction between the housing and the impeller. We solved this by designing and integrating two stabilizing brackets between the gearbox and the submerged pump section to ensure rigid, true rotation.
-
-### Future Scope
-
-While the current impeller design meets all performance criteria, future iterations will focus on the exterior housing. I plan to redesign the housing for a more ergonomic appearance, refine the internal volute geometry, and implement a streamlined adapter between the end volute and the outlet pipe.
-
+</div>
+</details>
 </div>
 
 </details>
@@ -109,9 +92,9 @@ While the current impeller design meets all performance criteria, future iterati
 <hr>
 
 ## My Portfolio Site!
-**Timeline:** Mar 2026 - Present | **Links:** **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
+**Timeline:** Mar 2026 - May 2026 | **Links:** **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
 
-**Core Technologies:** HTML/CSS, JavaScript, Git/GitHub
+**Core Technologies:** HTML/CSS, JavaScript, Jekyll, Git/GitHub
 
 <details class="project-accordion">
 
@@ -119,7 +102,28 @@ While the current impeller design meets all performance criteria, future iterati
 
 <div class="accordion-content">
 
-So far, all you've seen has been part of this project! Check back for a run-down of how I built it and plan to maintain!
+Problem:
+I had no place to display my technical projects and professional experience, along with write-ups and reflections upon outside literature or previous projects:
+Github repositories:
+Jekyll: A simple static website generator.
+
+Future Scope:
+In the future, I'd like to expand upon some personal projects not entirely attached to my academic/professional efforts. For example, I'd like to include some of my personal reflections on my readings or what I've learned in my fews years gardening.
+
+### The Problem
+I required a centralized, professional platform to showcase my engineering portfolio, technical write-ups, and personal projects. Relying strictly on raw GitHub repositories lacked the visual presentation and user experience necessary for a professional portfolio. The objective was to engineer a lightweight, easily maintainable, and visually appealing static website to host these detailed write-ups.
+
+### The Solution
+I designed and deployed a custom static website, leveraging GitHub Pages for its robust hosting infrastructure and seamless continuous integration capabilities:
++ **Site Architecture:** Implemented Jekyll, a static site generator, to seamlessly convert Markdown files into structured HTML. This architecture allows for rapid content updates and drastically simplifies long-term maintenance.
++ **Deployment Pipeline:** Utilized Git push/fetch workflows to establish a streamlined, rapid deployment pipeline, allowing for immediate live-site iterations.
++ **Interactive UI/UX:** Integrated custom HTML, CSS, and JavaScript to engineer a feature-rich, user-friendly interface. This process included exploring advanced feature integration, resulting in a few interactive "easter eggs" hidden throughout the site. and the submerged pump section, ensuring rigid, true rotation.
+
+### The Results
+Successfully launched a fully responsive and easily maintainable portfolio site (the one you are currently browsing!). By adopting a Jekyll-based architecture and automated GitHub Pages deployment, the friction of documenting and publishing new technical projects has been practically eliminated.
+
+### Future Scope
+Future iterations will expand the site's scope beyond my academic and professional engineering efforts. I plan to integrate dedicated sections for personal projects, including reflections on outside literature and documentation of what I've learned from several years of gardening.
 
 </div>
 
