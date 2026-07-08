@@ -131,3 +131,23 @@ Future iterations will expand the site's scope beyond my academic and profession
 </details>
 
 <hr>
+
+## Long Short-Term Memory (LSTM) Recurrent Neural Network (RNN)
+**Timeline:** July 2026 - Present
+
+**Core Technologies:** TBD
+
+<details class="project-accordion">
+
+<summary> View Project Details </summary>
+
+<div class="accordion-content">
+
+This page is still under construction! Please return later for a deep-dive into this project!
+
+
+</div>
+
+</details>
+
+<hr>
