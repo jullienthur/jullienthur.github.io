@@ -20,8 +20,11 @@ The objective was to develop an automated control system to operate a solenoid-a
 To achieve a high-speed, autonomous cycle, we built a bi-directional serial communication pipeline bridging MATLAB and an Arduino-based kinematics engine:
 
 + **Vision & Target Acquisition:** Implemented MATLAB image processing utilizing a color-filter array and a simplified environmental map to identify and extract the spatial coordinates of visual targets.
+
 + **Hardware Execution:** Passed spatial data to the Arduino C++ kinematics engine, which translated the coordinates into precise linear movements and ballistic trajectories. 
+
 + **Pathfinding Optimization:** Engineered a dynamic sorting algorithm that optimized the engagement sequence based on each target's spatial proximity to the fixed reloading station, drastically reducing unnecessary travel distance along the rail.
+
 + **Concurrent Operations:** Developed custom, non-blocking state machines in C++ to run the reloading mechanism and the linear positioning motor simultaneously, effectively eliminating standard process delays and idle time.
 
 ### The Results
@@ -56,8 +59,11 @@ For low-flow applications, standard water pumps often risk exposing internal ele
 To ensure reliable, isolated fluid transfer, we engineered a customized mechanical and hydrodynamic system using SolidWorks and PLA 3D printing:
 
 + **Optimized Hydrodynamics:** Modeled a custom enclosed centrifugal impeller. The backward-curved blades increase endurance in static pressure environments and reduce motor wear upon startup. Additionally, the shrouds compensate for axial movement to mitigate pressure leakage within the housing.
+
 + **Robust Volute Housing:** Developed a two-part standard spiral volute capable of pulling water up a 1-meter head. The bottom casing was extended around the impeller to accommodate potential shifting during sub-optimal working conditions.
+
 + **Mechanical Stabilization:** We encountered a critical issue with driveshaft whip, which caused excessive friction between the housing and the impeller. We solved this by designing and integrating two stabilizing brackets between the gearbox and the submerged pump section, ensuring rigid, true rotation.
+
 + **Power Delivery:** Integrated a 3W motor running through a 1:7.72 gearbox, achieving a stable final average output of 72 RPM under load.
 
 ### The Results
@@ -102,21 +108,16 @@ While the current design meets all performance criteria, future iterations will 
 
 <div class="accordion-content">
 
-Problem:
-I had no place to display my technical projects and professional experience, along with write-ups and reflections upon outside literature or previous projects:
-Github repositories:
-Jekyll: A simple static website generator.
-
-Future Scope:
-In the future, I'd like to expand upon some personal projects not entirely attached to my academic/professional efforts. For example, I'd like to include some of my personal reflections on my readings or what I've learned in my fews years gardening.
-
 ### The Problem
 I required a centralized, professional platform to showcase my engineering portfolio, technical write-ups, and personal projects. Relying strictly on raw GitHub repositories lacked the visual presentation and user experience necessary for a professional portfolio. The objective was to engineer a lightweight, easily maintainable, and visually appealing static website to host these detailed write-ups.
 
 ### The Solution
 I designed and deployed a custom static website, leveraging GitHub Pages for its robust hosting infrastructure and seamless continuous integration capabilities:
+
 + **Site Architecture:** Implemented Jekyll, a static site generator, to seamlessly convert Markdown files into structured HTML. This architecture allows for rapid content updates and drastically simplifies long-term maintenance.
+
 + **Deployment Pipeline:** Utilized Git push/fetch workflows to establish a streamlined, rapid deployment pipeline, allowing for immediate live-site iterations.
+
 + **Interactive UI/UX:** Integrated custom HTML, CSS, and JavaScript to engineer a feature-rich, user-friendly interface. This process included exploring advanced feature integration, resulting in a few interactive "easter eggs" hidden throughout the site. and the submerged pump section, ensuring rigid, true rotation.
 
 ### The Results

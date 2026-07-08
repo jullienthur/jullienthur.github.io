@@ -21,7 +21,12 @@
       <span class="timeline-role">Cybercorp Information Technology Intern</span>
       <span class="timeline-dates">Jul 2022 – Jun 2025</span>
     </div>
-    <div class="timeline-desc"><em></em></div>
+    <div class="timeline-desc"> 
+    <em>
+    <span class="timeline-dot"></span>
+    
+    </em>
+    </div>
   </div>
 
 </div>
