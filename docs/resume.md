@@ -11,6 +11,7 @@
       <span class="timeline-role">Undergraduate Research Assistant</span>
       <span class="timeline-dates">May 2026 – <strong class="text-accent">Present</strong></span>
     </div>
+    <div class="timeline-desc"> <strong>Links:</strong> <strong><a href="https://hgnlab.mech.utah.edu/">Lab Website</a></strong></div>
     <div class="timeline-meta"> • Fabricated custom mechanical components for bionic device prototypes utilizing advanced CNC machinery. 
 </div>
     <div class="timeline-meta"> • Engineered closed-loop motor control systems utilizing specialized encoders for precise robotic actuation.</div>
