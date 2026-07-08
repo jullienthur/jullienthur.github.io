@@ -4,6 +4,17 @@
 
 <div class="timeline">
 
+ <div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-header">
+      <span class="timeline-org">HGN Bionics Lab</span>
+      <span class="timeline-role">Undergraduate Research Assistant</span>
+      <span class="timeline-dates">May 2026 – <strong class="text-accent">Present</strong></span>
+    </div>
+    <div class="timeline-meta">[placeholder] • [placeholder]</div>
+    <div class="timeline-desc">[placeholder]</div>
+  </div>
+
 <div class="timeline-item">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
