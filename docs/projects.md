@@ -132,10 +132,10 @@ Future iterations will expand the site's scope beyond my academic and profession
 
 <hr>
 
-## Long Short-Term Memory (LSTM) Recurrent Neural Network (RNN)
-**Timeline:** July 2026 - Present
+## Long Short-Term Memory (LSTM) for Stock Price Prediction
+**Timeline:** July 2026 - Present | **Links:** **[GitHub Repository](https://github.com/jullienthur/LSTM)**
 
-**Core Technologies:** TBD
+**Core Technologies:** Python, TensorFlow
 
 <details class="project-accordion">
 
@@ -144,6 +144,8 @@ Future iterations will expand the site's scope beyond my academic and profession
 <div class="accordion-content">
 
 This page is still under construction! Please return later for a deep-dive into this project!
+
+*Check out the Repository's README.md for a sneak peek!*
 
 
 </div>
