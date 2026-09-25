@@ -24,7 +24,7 @@
       <span class="timeline-role">B.S | Mechanical Engineering</span>
       <span class="timeline-dates">Aug 2025 – <strong class="text-accent">Present</strong></span>
     </div>
-    <div class="timeline-desc"><em>Emphasis in Robotics & Controls, Minor in Computer Science<em></div>
+    <div class="timeline-desc"><em>Emphasis in Robotics & Controls, Minor in Computer Science</em></div>
   </div>
 
   <div class="timeline-item">

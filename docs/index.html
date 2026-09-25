@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jullien Thur - Portfolio</title>
-    <meta name="description" content="UofU Student studying Mechanical Engineering">
+    <meta name="description" content="Jullien Thur is a mechanical engineering student working at the intersection of robotics, controls, and product design.">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="development.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- 3D Model Viewer Script -->
@@ -140,6 +141,23 @@
 
     <!-- Main Content -->
     <main class="mx-auto max-w-3xl px-4 sm:px-8">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">Mechanical engineering · Robotics · Product design</p>
+                <h1 id="hero-title">Thoughtful engineering, built for the real world.</h1>
+                <p class="hero-intro">I'm Jullien Thur. I design, build, and test systems that bring mechanical ideas to life, from precision hardware to intelligent automation.</p>
+                <div class="hero-actions">
+                    <a class="hero-primary" href="#projects">Explore projects <span aria-hidden="true">↗</span></a>
+                    <a class="hero-secondary" href="#resume">View résumé <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="hero-aside" aria-label="Areas of work">
+                <span class="hero-aside-label">Areas of work</span>
+                <span>01 / Mechanical design</span>
+                <span>02 / Controls &amp; automation</span>
+                <span>03 / Prototyping &amp; testing</span>
+            </div>
+        </section>
         <!-- About Section -->
         <section id="about" class="mb-16">
             <div class="prose" id="about-content">
@@ -170,9 +188,11 @@
     </main>
 
     <!-- Footer -->
-    <div class="mx-auto max-w-3xl px-4 sm:px-8 py-8 text-center text-sm opacity-75">
-        <p>Built from scratch :)</p>
-    </div>
+    <footer class="site-footer mx-auto max-w-3xl px-4 sm:px-8 py-8">
+        <span>Jullien Thur</span>
+        <span>Mechanical engineering · Utah</span>
+        <a href="mailto:jullien.s.thur@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+    </footer>
 
     <script src="script.js"></script>
 </body>

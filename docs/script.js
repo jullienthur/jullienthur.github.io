@@ -292,9 +292,12 @@ class MarkdownLoader {
                     const markdown = await response.text();
                     const html = this.parseMarkdown(markdown);
                     contentElement.innerHTML = html;
-                    // Apply hover effect to new content
-                    if (typeof window.applyBHoverEffect === 'function') {
-                        window.applyBHoverEffect(contentElement);
+                    const firstHeading = contentElement.querySelector('h1');
+                    if (firstHeading) {
+                        const sectionHeading = document.createElement('h2');
+                        sectionHeading.className = `${firstHeading.className} section-title`;
+                        sectionHeading.innerHTML = firstHeading.innerHTML;
+                        firstHeading.replaceWith(sectionHeading);
                     }
                     console.log(`Successfully loaded ${section} from: ${fullPath}`);
                     return; // Success, exit early
@@ -318,10 +321,6 @@ class MarkdownLoader {
                 <p><small>Tried paths: ${pathsToTry.join(', ')}</small></p>
             </div>
         `;
-        // Apply hover effect to error content
-        if (typeof window.applyBHoverEffect === 'function') {
-            window.applyBHoverEffect(contentElement);
-        }
     }
 
     parseMarkdown(markdown) {
@@ -568,21 +567,9 @@ document.addEventListener('DOMContentLoaded', () => {
     new MarkdownLoader();
     new AccordionAnimator();
     
-    // Apply hover effect to all 'b' letters on initial content
-    if (typeof window.applyBHoverEffect === 'function') {
-        window.applyBHoverEffect(document.body);
-    }
-
-    // Initialize party hat explosion feature
-    new PartyHatExplosion();
-    
     // Add loading state management
     document.body.classList.add('loaded');
     
-    // Console message for developers
-    console.log('🌵 Portfolio site loaded successfully!');
-    console.log('🎉 Click the logo for a party surprise!');
-    console.log('Built with inspiration from astro-theme-cactus');
 });
 
 // Handle page visibility changes (pause animations when not visible)
