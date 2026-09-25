@@ -133,7 +133,7 @@ Future iterations will expand the site's scope beyond my academic and profession
 <hr>
 
 ## Long Short-Term Memory (LSTM) for Stock Price Prediction
-**Timeline:** July 2026 - Present | **Links:** **[GitHub Repository](https://github.com/jullienthur/LSTM)**
+**Timeline:** July 2026 - August 2025 (Project paused for Fall 2026 Semester) | **Links:** **[GitHub Repository](https://github.com/jullienthur/LSTM)**
 
 **Core Technologies:** Python, TensorFlow
 
