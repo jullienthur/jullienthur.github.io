@@ -615,7 +615,7 @@ class PartyHatExplosion {
 
     init() {
         // Find the logo link and add click handler
-        const logoLink = document.querySelector('#main-header a[href="#"]');
+        const logoLink = document.querySelector('#main-header .header-logo');
         if (logoLink) {
             logoLink.addEventListener('click', (e) => {
                 e.preventDefault();

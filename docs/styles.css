@@ -289,17 +289,21 @@ body {
 }
 
 /* Make logo clickable with cursor pointer and subtle hover effect */
-#main-header a[href="#"] {
+#main-header .header-logo {
     cursor: pointer;
     transition: opacity 0.2s ease;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
 }
 
-#main-header a[href="#"]:hover svg {
+#main-header .header-logo:hover svg {
     transform: scale(1.05);
     transition: opacity 0.2s ease;
 }
 
-#main-header a[href="#"]:focus-visible {
+#main-header .header-logo:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 4px;
     border-radius: 4px;

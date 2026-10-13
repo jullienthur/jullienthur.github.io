@@ -35,9 +35,6 @@ While highly efficient, the current iteration relies on a "stop-and-shoot" mecha
 
 </div>
 </details>
-</div>
-
-</details>
 
 <hr>
 
@@ -77,22 +74,19 @@ While the current design meets all performance criteria, future iterations will 
     <figcaption>Figure 1: Different Impeller Designs reference</figcaption>
 </figure>
 <figure>
-    <div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" loading="lazy" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <div class="cad-viewer-container"> <model-viewer src="assets/impeller-preview.glb" loading="lazy" alt="Interactive 3D model of the pump impeller" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
     <figcaption>Figure 2: Our Final Impeller Design</figcaption>
 </figure>
 <figure>
-    <div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" loading="lazy" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <div class="cad-viewer-container"> <model-viewer src="assets/top-case-preview.glb" loading="lazy" alt="Interactive 3D model of the pump's top casing" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
     <figcaption>Figure 3: Top Casing Design</figcaption>
 </figure>
 <figure>
-    <div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" loading="lazy" alt="Interactive 3D Model of the Pump Assembly" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
+    <div class="cad-viewer-container"> <model-viewer src="assets/bottom-case-preview.glb" loading="lazy" alt="Interactive 3D model of the pump's bottom casing" auto-rotate camera-controls shadow-intensity="1" exposure="1.0"></model-viewer> </div>
     <figcaption>Figure 4: Bottom Casing Design</figcaption>
 </figure>    
 
 </div>
-</details>
-</div>
-
 </details>
 
 <hr>
@@ -100,7 +94,7 @@ While the current design meets all performance criteria, future iterations will 
 ## My Portfolio Site!
 **Timeline:** Mar 2026 - May 2026 | **Links:** **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
 
-**Core Technologies:** HTML/CSS, JavaScript, Jekyll, Git/GitHub
+**Core Technologies:** HTML/CSS, JavaScript, GitHub Pages, Git/GitHub
 
 <details class="project-accordion">
 
@@ -114,14 +108,14 @@ I required a centralized, professional platform to showcase my engineering portf
 ### The Solution
 I designed and deployed a custom static website, leveraging GitHub Pages for its robust hosting infrastructure and seamless continuous integration capabilities:
 
-+ **Site Architecture:** Implemented Jekyll, a static site generator, to seamlessly convert Markdown files into structured HTML. This architecture allows for rapid content updates and drastically simplifies long-term maintenance.
++ **Site Architecture:** Built a lightweight browser-side content loader that fetches Markdown sections and converts them into HTML, keeping project updates separate from the page structure.
 
 + **Deployment Pipeline:** Utilized Git push/fetch workflows to establish a streamlined, rapid deployment pipeline, allowing for immediate live-site iterations.
 
-+ **Interactive UI/UX:** Integrated custom HTML, CSS, and JavaScript to engineer a feature-rich, user-friendly interface. This process included exploring advanced feature integration, resulting in a few interactive "easter eggs" hidden throughout the site. and the submerged pump section, ensuring rigid, true rotation.
++ **Interactive UI/UX:** Integrated custom HTML, CSS, and JavaScript to create a responsive interface with interactive project accordions, theme controls, 3D model viewers, and a few hidden easter eggs.
 
 ### The Results
-Successfully launched a fully responsive and easily maintainable portfolio site (the one you are currently browsing!). By adopting a Jekyll-based architecture and automated GitHub Pages deployment, the friction of documenting and publishing new technical projects has been practically eliminated.
+Successfully launched a fully responsive and easily maintainable portfolio site (the one you are currently browsing!). By combining Markdown-based content with GitHub Pages deployment, the friction of documenting and publishing new technical projects has been substantially reduced.
 
 ### Future Scope
 Future iterations will expand the site's scope beyond my academic and professional engineering efforts. I plan to integrate dedicated sections for personal projects, including reflections on outside literature and documentation of what I've learned from several years of gardening.
