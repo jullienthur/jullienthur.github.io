@@ -91,7 +91,7 @@ While the current design meets all performance criteria, future iterations will 
 
 <hr>
 
-## My Portfolio Site!
+## Portfolio Site
 **Timeline:** Mar 2026 - May 2026 | **Links:** **[GitHub Repository](https://github.com/jullienthur/jullienthur.github.io)**
 
 **Core Technologies:** HTML/CSS, JavaScript, GitHub Pages, Git/GitHub
