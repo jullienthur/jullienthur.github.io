@@ -134,6 +134,7 @@ class SmoothScroll {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
+                if (!targetId || targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
@@ -615,7 +616,7 @@ class PartyHatExplosion {
 
     init() {
         // Find the logo link and add click handler
-        const logoLink = document.querySelector('#main-header .header-logo');
+        const logoLink = document.querySelector('#main-header a[href="#"]');
         if (logoLink) {
             logoLink.addEventListener('click', (e) => {
                 e.preventDefault();
